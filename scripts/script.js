@@ -8,14 +8,16 @@ let questions = [];
 async function fetchQuestions() {
     const response = await fetch("./utils/fetch-question.php");
     const data = await response.json();
-    
-    if (data.error) {
-        console.error("Error fetching questions:", data.error);
+
+    if (data.message) {
+        console.log(data.message);
+        fetchQuestions(); // Restart quiz if all questions have been viewed
     } else {
         questions = data; // Store questions in the global variable
+        currentQuestionIndex = 0;
+        score = 0;
         displayQuestion();
     }
-    console.log("FRÅGORARRAY: " + questions);
 }
 
 // Function to display a question
@@ -24,31 +26,30 @@ function displayQuestion() {
         const question = questions[currentQuestionIndex];
         document.getElementById("question").textContent = question.question;
 
-        // Set answers and mark the correct one
+        // Set answers and reset their appearance
         document.querySelectorAll(".answer").forEach((answer, index) => {
             const answerKey = `answer_${index + 1}`; // Matches answer_1, answer_2, etc.
             answer.querySelector("p").textContent = question[answerKey];
-            answer.dataset.correct = (index + 1) === parseInt(question.correct_answer); // Compare with correct_answer column
+            answer.dataset.correct = (index + 1) === parseInt(question.correct_answer); // Match with correct_answer column
             answer.style.backgroundColor = ""; // Reset colors
+            answer.classList.remove("disabled");
         });
-
-        console.log("FRÅGAINDEX: " + currentQuestionIndex);
-        console.log("Längd: " + questions.length);
-        console.log("Poäng: " + score);
-        
     } else {
-        console.log("KLART!!");
-
-        showModalWindow();
+        // Show modal at the end of the round
+        document.getElementById("score").textContent = score + "/" + questions.length;
+        document.getElementById("modal-window").showModal();
     }
 }
 
 // Event listener for answers
 document.querySelectorAll(".answer").forEach(answer => {
     answer.addEventListener("click", () => {
+        // Disable further clicks
+        document.querySelectorAll(".answer").forEach(a => a.classList.add("disabled"));
+
         // Highlight correct and incorrect answers
-        document.querySelectorAll(".answer").forEach(answer => {
-            answer.style.backgroundColor = answer.dataset.correct === "true" ? "green" : "red";
+        document.querySelectorAll(".answer").forEach(a => {
+            a.style.backgroundColor = a.dataset.correct === "true" ? "green" : "red";
         });
 
         // Update score if the correct answer is clicked
@@ -64,29 +65,16 @@ document.getElementById("next-question").addEventListener("click", () => {
     displayQuestion();
 });
 
-// Restart quiz
+// Restart quiz logic
 function restartQuiz() {
-    currentQuestionIndex = 0;
-    score = 0;
     fetchQuestions();
 }
 
-const modalWindow = document.getElementById("modal-window");
-
-// Show the modal with dialogs' method showModal()
-function showModalWindow() {
-    document.getElementById("score").textContent = score + "/" + questions.length;
-    modalWindow.showModal();
-}
-
-// Close modal with close()
-function closeModalWindow() {
-    modalWindow.close();
+// Close modal and restart quiz
+document.getElementById("close-modal-button").addEventListener("click", () => {
+    document.getElementById("modal-window").close();
     restartQuiz();
-}
-
-// Listeners for the buttons
-document.getElementById("close-modal-button").addEventListener("click", closeModalWindow);
+});
 
 // Initialize quiz
 fetchQuestions();
