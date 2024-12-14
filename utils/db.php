@@ -1,6 +1,18 @@
 <?php
 // utils/db.php
 
+/* DB INFO
+Table: f1_quiz
+Columns:
+id: int
+answer_1: varchar
+answer_2: varchar
+answer_3: varchar
+answer_4: varchar
+corrent_answer: int (1-4)
+
+*/
+
 // Connect to MySQL database
 function getDbConnection() {
     $servername = "localhost"; //  database server
