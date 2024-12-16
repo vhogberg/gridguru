@@ -1,8 +1,29 @@
+@font-face {
+    font-family: "RacingSansOne";
+    src: url("../assets/fonts/RacingSansOne-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter-VariableFont_opsz\,wght.ttf") format('truetype');
+}
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
 h1 {
-    font-size: large;
+    margin: 0px;
+    padding: 0px 10px 0px 10px;
+    font-family: "RacingSansOne", sans-serif;
+    letter-spacing: 3px;
+    font-weight: 200;
+    font-size: 50px;
+    color: rgb(2, 15, 20)
 }
 
 header {
+    display: grid;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -18,12 +39,41 @@ body {
 
 #logo {
     max-width: 200px;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+#question {
+    max-width: 800px;
+    margin: 8px 0px;
+    color: rgb(2, 15, 20)
+}
 
 .answer {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding: 1em;
+    margin: 0.8em 0px;
+    padding: 0.5em 1em;
+
+
     border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: rgb(2, 15, 20);
+
+    background-color: rgba(235, 235, 235, 0.795);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.answer:hover {
+    background-color: rgba(218, 218, 218, 0.795);
+    border-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.answer.correct {
+    background-color: rgba(117, 216, 126, 0.795);
+}
+
+.answer.incorrect {
+    background-color: rgba(236, 104, 104, 0.795);
 }
