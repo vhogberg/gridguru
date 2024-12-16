@@ -89,3 +89,14 @@ document.getElementById("close-modal-button").addEventListener("click", () => {
 
 // Initialize quiz
 fetchQuestions();
+
+
+
+
+/* Styling logic */
+// Function to toggle dark mode
+function toggleDarkMode() {
+    document.documentElement.classList.toggle('dark-mode');
+}
+
+document.documentElement.classList.toggle('dark-mode');

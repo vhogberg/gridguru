@@ -8,8 +8,31 @@
     src: url("../assets/fonts/Inter-VariableFont_opsz\,wght.ttf") format('truetype');
 }
 
+:root {
+    --background-color: rgb(255, 255, 255);
+    --element-color: rgb(2, 15, 20);
+    --element-background-color: rgb(240, 240, 240);
+    --element-background-hover-color: rgb(228, 228, 228);
+    --button-background-color: rgb(218, 218, 218);
+
+    --correct-answer-color: rgba(117, 216, 126, 0.795);
+    --incorrect-answer-color: rgba(236, 104, 104, 0.795);
+}
+
+:root.dark-mode {
+    --background-color: rgb(27, 27, 27);
+    --element-color: rgb(192, 192, 192);
+    --element-background-color: rgb(59, 59, 59);
+    --element-background-hover-color: rgb(48, 48, 48);
+    --button-background-color: rgb(27, 27, 27);
+
+    --correct-answer-color: rgb(37, 95, 34);
+    --incorrect-answer-color: rgb(92, 34, 34);
+}
+
 * {
     font-family: "Inter", sans-serif;
+    color: var(--element-color);
 }
 
 h1 {
@@ -19,7 +42,7 @@ h1 {
     letter-spacing: 3px;
     font-weight: 200;
     font-size: 50px;
-    color: rgb(2, 15, 20)
+    color: var(--element-color);
 }
 
 header {
@@ -42,7 +65,7 @@ body {
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--background-color);
 }
 
 #logo {
@@ -55,7 +78,7 @@ body {
 #question {
     max-width: 800px;
     margin: 8px 0px;
-    color: rgb(2, 15, 20)
+    color: var(--element-color);
 }
 
 .answer {
@@ -66,35 +89,32 @@ body {
     border-style: solid;
     border-radius: 8px;
     border-width: 2px;
-    border-color: rgb(2, 15, 20);
+    border-color: var(--element-color);
 
-    background-color: rgba(235, 235, 235, 0.795);
+    background-color: var(--element-background-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .answer:hover {
-    background-color: rgba(218, 218, 218, 0.795);
-    border-color: rgb(0, 0, 0);
+    background-color: var(--element-background-hover-color);
     cursor: pointer;
 }
 
 .correct {
-    background-color: rgba(117, 216, 126, 0.795);
+    background-color: var(--correct-answer-color);
 }
 
 .incorrect {
-    background-color: rgba(236, 104, 104, 0.795);
+    background-color: var(--incorrect-answer-color);
 }
 
 .correct:hover {
-    background-color: rgba(117, 216, 126, 0.795);
-    border-color: rgb(0, 0, 0);
+    background-color: var(--correct-answer-color);
     cursor: default;
 }
 
 .incorrect:hover {
-    background-color: rgba(236, 104, 104, 0.795);
-    border-color: rgb(0, 0, 0);
+    background-color: var(--incorrect-answer-color);
     cursor: default;
 }
 
@@ -111,9 +131,9 @@ button {
     border-style: solid;
     border-radius: 8px;
     border-width: 2px;
-    border-color: rgb(2, 15, 20);
+    border-color: var(--element-color);
 
-    background-color: rgb(218, 218, 218);
+    background-color: var(--button-background-color);
 
     cursor: pointer;
 }
@@ -127,10 +147,12 @@ button {
 
 /* Modal window */
 dialog {
+
+    background-color: var(--background-color);
     border-style: solid;
     border-radius: 8px;
     border-width: 2px;
-    border-color: rgb(2, 15, 20);
+    border-color: var(--element-color);
 
 
     margin-left: auto;
