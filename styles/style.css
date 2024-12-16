@@ -123,3 +123,25 @@ button {
     gap: 15px;
     align-items: center;
 }
+
+
+/* Modal window */
+dialog {
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: rgb(2, 15, 20);
+
+
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Add 3em margin on left and right */
+    width: calc(100% - 6em);
+    max-width: 500px;
+
+}
+
+dialog h3 {
+    margin: 0px;
+}
