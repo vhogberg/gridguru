@@ -29,6 +29,14 @@ header {
     margin-right: auto;
 }
 
+span {
+    font-size: 16px;
+}
+
+p {
+    font-size: 18px;
+}
+
 body {
     padding: 1em;
     max-width: fit-content;
@@ -70,10 +78,48 @@ body {
     cursor: pointer;
 }
 
-.answer.correct {
+.correct {
     background-color: rgba(117, 216, 126, 0.795);
 }
 
-.answer.incorrect {
+.incorrect {
     background-color: rgba(236, 104, 104, 0.795);
+}
+
+.correct:hover {
+    background-color: rgba(117, 216, 126, 0.795);
+    border-color: rgb(0, 0, 0);
+    cursor: default;
+}
+
+.incorrect:hover {
+    background-color: rgba(236, 104, 104, 0.795);
+    border-color: rgb(0, 0, 0);
+    cursor: default;
+}
+
+.picked-answer {
+    translate: 10px;
+    transition-duration: 100ms;
+}
+
+button {
+    padding: 0.6em 1em;
+
+    font-size: 16px;
+
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: rgb(2, 15, 20);
+
+    background-color: rgb(218, 218, 218);
+
+    cursor: pointer;
+}
+
+#next-question-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }

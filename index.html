@@ -24,7 +24,7 @@
     </header>
 
     <div class="wrapper">
-        <h2 id="question">Question loading... test testtesttest testtesttest testtesttest testtesttest testtesttest testtest</h2>
+        <h2 id="question">Question loading...</h2>
 
         <div class="answer" id="answer-1">
             <p>First answer loading...</p>
@@ -39,12 +39,15 @@
             <p>Fourth answer loading...</p>
         </div>
 
-        <button id="next-question">Next Question</button>
-
+        <div id="next-question-container">
+            <button id="next-question">Next Question</button>
+            <span id="current-question">Loading...</span>
+        </div>
+        
         <dialog class="modalWindow" id="modal-window">
             <h3>Well done!</h3>
             <p>You scored: <span id="score">Error</span>.</p>
-            <p>You can continue with more questions below.</p>
+            <p>You can continue playing with more questions below.</p>
             <button class="closeModalButton" id="close-modal-button">Play again</button>
         </dialog>
 
