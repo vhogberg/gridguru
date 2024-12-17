@@ -41,7 +41,7 @@ function displayQuestion() {
     } else {
         // Show modal at the end of the round
         document.getElementById("score").textContent = score + "/" + questions.length;
-        document.getElementById("modal-window").showModal();
+        document.getElementById("game-over-modal").showModal();
     }
 }
 
@@ -84,28 +84,14 @@ function restartQuiz() {
 }
 
 // Close modal and restart quiz
-document.getElementById("close-modal-button").addEventListener("click", () => {
-    document.getElementById("modal-window").close();
+document.getElementById("close-game-over-modal-button").addEventListener("click", () => {
+    document.getElementById("game-over-modal").close();
     restartQuiz();
 });
 
 // Initialize quiz
 fetchQuestions();
 
-
-/* Styling logic */
-// Function to toggle dark mode
-document.getElementById("dark-mode-button").addEventListener("click", () => {
-    document.documentElement.classList.toggle('dark-mode');
-    const darkModeButton = document.getElementById("hamburger-menu-icon");
-
-    // Check the file name part of the src
-    if (!darkModeButton.src.endsWith("hamburger-menu-icon-dark-mode.svg")) {
-        darkModeButton.src = "assets/icons/hamburger-menu-icon-dark-mode.svg";
-    } else {
-        darkModeButton.src = "assets/icons/hamburger-menu-icon.svg";
-    }
-});
 
 // For header menu button dropdown list
 document.addEventListener('DOMContentLoaded', function () {
@@ -127,4 +113,26 @@ document.addEventListener('DOMContentLoaded', function () {
             menuList.style.display = 'none';
         }
     });
+});
+
+// Function to toggle dark mode
+document.getElementById("dark-mode-button").addEventListener("click", () => {
+    document.documentElement.classList.toggle('dark-mode');
+    const darkModeButton = document.getElementById("hamburger-menu-icon");
+
+    // Check the file name part of the src
+    if (!darkModeButton.src.endsWith("hamburger-menu-icon-dark-mode.svg")) {
+        darkModeButton.src = "assets/icons/hamburger-menu-icon-dark-mode.svg";
+    } else {
+        darkModeButton.src = "assets/icons/hamburger-menu-icon.svg";
+    }
+});
+
+// Function to show "how to play" modal window
+document.getElementById("how-to-play-modal-button").addEventListener("click", () => {
+    document.getElementById("how-to-play-modal").showModal();
+});
+
+document.getElementById("close-modal-button").addEventListener("click", () => {
+    document.getElementById("how-to-play-modal").close();
 });

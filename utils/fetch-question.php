@@ -6,8 +6,10 @@ include 'db.php';
 function getQuestions()
 {
     $conn = getDbConnection();
+    // Using session to prevent user from getting the same questions over and over
     session_start();
 
+    // Array viewed_questions contains the questions the user has already seen
     if (!isset($_SESSION['viewed_questions'])) {
         $_SESSION['viewed_questions'] = [];
     }
@@ -16,6 +18,7 @@ function getQuestions()
         ? implode(',', $_SESSION['viewed_questions'])
         : '0';
 
+    // Select 10 questions that have not already been viewed, order randomly.
     $sql = "SELECT * FROM questions
             WHERE id NOT IN ($viewed_ids)
             ORDER BY RAND()
@@ -30,7 +33,7 @@ function getQuestions()
         }
         echo json_encode($questions);
     } else {
-        $_SESSION['viewed_questions'] = []; // Reset session when all questions are viewed
+        $_SESSION['viewed_questions'] = []; // Reset session when all questions are viewed, so user can start again
         echo json_encode(["message" => "All questions have been viewed. Restarting."]);
     }
     $conn->close();

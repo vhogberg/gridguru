@@ -102,7 +102,7 @@ button {
     left: 0;
     background-color: var(--element-background-color);
     /* Match the button background */
-    
+
     list-style-type: none;
     padding: 0.4rem;
     margin-top: 4px;
@@ -178,10 +178,12 @@ body {
 
 .correct:hover {
     cursor: default;
+    background-color: var(--correct-answer-color);
 }
 
 .incorrect:hover {
     cursor: default;
+    background-color: var(--incorrect-answer-color);
 }
 
 .picked-answer {
@@ -205,7 +207,6 @@ body {
 
 /* Modal window */
 dialog {
-
     background-color: var(--background-color);
     border-style: solid;
     border-radius: 8px;
@@ -225,3 +226,26 @@ dialog {
 dialog h3 {
     margin: 0px;
 }
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.384);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

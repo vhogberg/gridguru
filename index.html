@@ -26,7 +26,7 @@
                 <img id="hamburger-menu-icon" src="assets/icons/hamburger-menu-icon.svg" alt="Burger menu icon">
             </button>
             <ul id="menu-list" class="menu-list">
-                <button>How to play</button>
+                <button id="how-to-play-modal-button">How to play</button>
                 <br>
                 <button id="dark-mode-button">Dark mode</button>
             </ul>
@@ -61,11 +61,20 @@
             <span id="current-question">Loading...</span>
         </div>
 
-        <dialog class="modalWindow" id="modal-window">
+        <dialog class="modalWindow" id="game-over-modal">
             <h3>Well done! 🎉</h3>
             <p>You scored: <span id="score">Error</span>.</p>
             <p>You can continue playing with more questions below.</p>
-            <button class="closeModalButton" id="close-modal-button">Play again</button>
+            <button  id="close-game-over-modal-button">Play again</button>
+        </dialog>
+
+        <dialog class="modalWindow" id="how-to-play-modal">
+            <h3>Welcome to GridGuru! 🏎️</h3>
+            <p>There are 100+ questions available to go through.</p>
+            <p>They are played in sets of 10 where you will see your score after each set.</p>
+            <p>Once all questions have been answered, you can go through them again!</p>
+            <p>Have fun!</p>
+            <button id="close-modal-button">Close</button>
         </dialog>
 
     </div>
