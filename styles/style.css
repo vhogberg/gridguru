@@ -188,8 +188,7 @@ body {
 
 .picked-answer {
     box-shadow: 0 0 4px var(--element-color), 0 0 4px var(--element-color);
-    transform: scale(1.01);
-    transition: transform 50ms ease, box-shadow 50ms ease;
+    transition: 50ms;
 }
 
 .disabled {
@@ -233,10 +232,55 @@ dialog::backdrop {
 
 
 
+/* Mobile (0 - 500px width) */
+@media screen and (max-width: 500px) {
 
+    /* Slightly smaller logo */
+    #logo {
+        max-width: 140px;
+        max-height: 100%;
+    }
 
+    /* Smaller fonts */
+    h1 {
+        font-size: 45px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
 
+    .answer p {
+        font-size: 16px;
+        margin: 0.7em 0em;
+    }
 
+    span {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column; /* Arrange items vertically */
+        justify-content: center; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
+        margin: 0; /* Remove default margin */
+        box-sizing: border-box;
+        max-width: none; /* Allow body to grow and fill available space */
+    }
+    
+    body > * {
+        flex: 1; /* Allow children to grow and fill available space */
+        width: calc(100% - 0.3em);
+        box-sizing: border-box;
+    }
+
+}
 
 
 
