@@ -32,10 +32,11 @@ function displayQuestion() {
             const answerKey = `answer_${index + 1}`; // Matches answer_1, answer_2, etc.
             answer.querySelector("p").textContent = question[answerKey];
             answer.dataset.correct = (index + 1) === parseInt(question.correct_answer); // Match with correct_answer column
-            // Remove the subclasses for correct and incorrect answers as well as picked answer
+            // Remove the subclasses for correct and incorrect answers as well as picked answer and disabled
             answer.classList.remove("correct");
             answer.classList.remove("incorrect");
             answer.classList.remove("picked-answer");
+            answer.classList.remove("disabled");
         });
     } else {
         // Show modal at the end of the round
@@ -58,6 +59,7 @@ document.querySelectorAll(".answer").forEach(answer => {
                 // If answer is incorrect, add the subclass for it
                 a.classList.add("incorrect")
             }
+            a.classList.add("disabled");
         });
 
         // Add the "picked-answer" class to the clicked answer
@@ -91,12 +93,38 @@ document.getElementById("close-modal-button").addEventListener("click", () => {
 fetchQuestions();
 
 
-
-
 /* Styling logic */
 // Function to toggle dark mode
-function toggleDarkMode() {
+document.getElementById("dark-mode-button").addEventListener("click", () => {
     document.documentElement.classList.toggle('dark-mode');
-}
+    const darkModeButton = document.getElementById("hamburger-menu-icon");
 
-document.documentElement.classList.toggle('dark-mode');
+    // Check the file name part of the src
+    if (!darkModeButton.src.endsWith("hamburger-menu-icon-dark-mode.svg")) {
+        darkModeButton.src = "assets/icons/hamburger-menu-icon-dark-mode.svg";
+    } else {
+        darkModeButton.src = "assets/icons/hamburger-menu-icon.svg";
+    }
+});
+
+// For header menu button dropdown list
+document.addEventListener('DOMContentLoaded', function () {
+    const menuButton = document.getElementById('hamburger-menu-button');
+    const menuList = document.getElementById('menu-list');
+
+    // Toggle the menu on click
+    menuButton.addEventListener('click', function () {
+        if (menuList.style.display === 'block') {
+            menuList.style.display = 'none';
+        } else {
+            menuList.style.display = 'block';
+        }
+    });
+
+    // Close menu if clicked outside
+    document.addEventListener('click', function (event) {
+        if (!menuButton.contains(event.target) && !menuList.contains(event.target)) {
+            menuList.style.display = 'none';
+        }
+    });
+});

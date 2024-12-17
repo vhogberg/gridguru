@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>F1 Quiz</title>
     <meta charset="UTF-8">
-    
+
     <meta name="description" content="F1 Quiz">
     <meta name="author" content="Viktor Högberg">
     <meta name="generator" content="Visual Studio Code">
@@ -16,11 +17,27 @@
     <link rel="stylesheet" href="styles/style.css?rnd=12345">
 
 </head>
+
 <body>
 
     <header>
-        <img id="logo" src="assets/logos/GridGuro-logo.png" alt="Website logo">
-        <h1>GridGuru</h1>
+        <div id="menu-dropdown-list-container">
+            <button id="hamburger-menu-button">
+                <img id="hamburger-menu-icon" src="assets/icons/hamburger-menu-icon.svg" alt="Burger menu icon">
+            </button>
+            <ul id="menu-list" class="menu-list">
+                <button>How to play</button>
+                <br>
+                <button id="dark-mode-button">Dark mode</button>
+            </ul>
+        </div>
+
+
+        <div id="logo-title-container">
+            <img id="logo" src="assets/logos/GridGuro-logo.png" alt="Website logo">
+            <h1>GridGuru</h1>
+        </div>
+
     </header>
 
     <div class="wrapper">
@@ -43,7 +60,7 @@
             <button id="next-question">Next Question</button>
             <span id="current-question">Loading...</span>
         </div>
-        
+
         <dialog class="modalWindow" id="modal-window">
             <h3>Well done! 🎉</h3>
             <p>You scored: <span id="score">Error</span>.</p>
@@ -52,8 +69,9 @@
         </dialog>
 
     </div>
-    
+
     <script src="scripts/script.js"></script>
 
 </body>
+
 </html>

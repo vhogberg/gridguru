@@ -46,10 +46,76 @@ h1 {
 }
 
 header {
+    position: relative;
+    z-index: 10;
+    /* Ensures the header and its dropdown list have precedence */
+}
+
+#logo-title-container {
     display: grid;
+    align-items: center;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
+}
+
+#hamburger-menu-icon {
+    color: var(--element-color);
+}
+
+button {
+    padding: 0.6em 1em;
+
+    font-size: 16px;
+
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: var(--element-color);
+
+    background-color: var(--button-background-color);
+
+    cursor: pointer;
+}
+
+#hamburger-menu-button {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    background: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+#menu-dropdown-list-container {
+    position: relative;
+}
+
+#menu-list {
+    display: none;
+    /* Initially hidden */
+    position: absolute;
+    /* Position relative to parent */
+    top: 100%;
+    /* Align just below the button */
+    left: 0;
+    background-color: var(--element-background-color);
+    /* Match the button background */
+    
+    list-style-type: none;
+    padding: 0.4rem;
+    margin-top: 4px;
+    border: 2px solid var(--element-color);
+    border-radius: 8px;
+    z-index: 20;
+    /* Ensures it appears above other content */
+}
+
+#menu-list button {
+    margin: 0.3em;
+    padding: 0.4em;
+    border: none;
 }
 
 span {
@@ -101,42 +167,34 @@ body {
 }
 
 .correct {
+    transition: 50ms;
     background-color: var(--correct-answer-color);
 }
 
 .incorrect {
+    transition: 50ms;
     background-color: var(--incorrect-answer-color);
 }
 
 .correct:hover {
-    background-color: var(--correct-answer-color);
     cursor: default;
 }
 
 .incorrect:hover {
-    background-color: var(--incorrect-answer-color);
     cursor: default;
 }
 
 .picked-answer {
-    translate: 10px;
-    transition-duration: 100ms;
+    box-shadow: 0 0 4px var(--element-color), 0 0 4px var(--element-color);
+    transform: scale(1.01);
+    transition: transform 50ms ease, box-shadow 50ms ease;
 }
 
-button {
-    padding: 0.6em 1em;
-
-    font-size: 16px;
-
-    border-style: solid;
-    border-radius: 8px;
-    border-width: 2px;
-    border-color: var(--element-color);
-
-    background-color: var(--button-background-color);
-
-    cursor: pointer;
+.disabled {
+    pointer-events: none;
 }
+
+
 
 #next-question-container {
     display: flex;
