@@ -1,11 +1,11 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json");
+// Handling CORS (Cross-Origin Resource Sharing)
+
 // utils/fetch-question.php
 
 include 'db.php';
-
-// Handling CORS (Cross-Origin Resource Sharing)
-header("Access-Control-Allow-Origin: *");
-header("Content-Type: application/json");
 
 // Fetch questions from db
 function getQuestions()
