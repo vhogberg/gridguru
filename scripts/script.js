@@ -7,8 +7,8 @@ let questions = [];
 
 // Function to fetch 10 questions from the backend
 async function fetchQuestions() {
-    // local fetch from local php file:
-    const response = await fetch("./utils/fetch-question.php");
+    // local fetch from local file:
+    const response = await fetch("");
 
     // remote fetch from server (not used because infinityfree refuses to work properly)
     // const response = await fetch("https://viktorhogberg.infinityfreeapp.com/");
