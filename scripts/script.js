@@ -7,22 +7,55 @@ let questions = [];
 
 // Function to fetch 10 questions from the backend
 async function fetchQuestions() {
-    // local fetch from local file:
-    const response = await fetch("");
-
-    // remote fetch from server (not used because infinityfree refuses to work properly)
-    // const response = await fetch("https://viktorhogberg.infinityfreeapp.com/");
+    // local fetch from local JSON file:
+    const response = await fetch("./utils/questions.json");
     const data = await response.json();
 
-    if (data.message) {
-        console.log(data.message);
-        fetchQuestions(); // Restart quiz if all questions have been viewed
-    } else {
-        questions = data; // Store questions in the global questions array
-        currentQuestionIndex = 0;
-        score = 0;
-        displayQuestion();
+    // Retrieve the viewed questions from localStorage (or create an empty array if not found)
+    let viewedQuestions = JSON.parse(localStorage.getItem("viewedQuestions")) || [];
+
+    // If all questions have been viewed, reset the viewedQuestions array and start over again
+    if (viewedQuestions.length === data.length) {
+        localStorage.removeItem("viewedQuestions");
+        viewedQuestions = [];
     }
+
+    // Filter out the questions that have already been viewed
+    const unviewedQuestions = data.filter(q => !viewedQuestions.includes(q.id.toString()));
+
+    // If there are no unviewed questions left, reset and try again
+    if (unviewedQuestions.length === 0) {
+        console.log("All questions have been viewed. Restarting...");
+        localStorage.removeItem("viewedQuestions");
+        viewedQuestions = [];
+    }
+
+    // Randomly select 10 questions from the unviewed ones
+    const selectedQuestions = getRandomQuestions(unviewedQuestions, 10);
+
+    localStorage.setItem("viewedQuestions", JSON.stringify(viewedQuestions));
+
+    // Store the selected questions in the global questions array
+    questions = selectedQuestions;
+
+
+    // Add selected question IDs to the viewed list and store it back in localStorage
+    selectedQuestions.forEach(q => {
+        viewedQuestions.push(q.id.toString());
+    });
+
+    // Reset the question index and score
+    currentQuestionIndex = 0;
+    score = 0;
+
+    // Display the first question
+    displayQuestion();
+}
+
+// Function to get a random subset of questions
+function getRandomQuestions(arr, n) {
+    const shuffled = arr.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, n);
 }
 
 // Function to display a question

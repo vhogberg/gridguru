@@ -1,0 +1,452 @@
+[
+    {
+        "id": "1",
+        "question": "What is the minimum weight of a 2024 F1 car?",
+        "answer_1": "798 kg",
+        "answer_2": "740 kg",
+        "answer_3": "810 kg",
+        "answer_4": "765 kg",
+        "correct_answer": "1"
+    },
+    {
+        "id": "2",
+        "question": "What is the maximum allowed fuel load of a 2024 F1 car during a race?",
+        "answer_1": "100 kg",
+        "answer_2": "95 kg",
+        "answer_3": "105 kg",
+        "answer_4": "110 kg",
+        "correct_answer": "4"
+    },
+    {
+        "id": "3",
+        "question": "What is the standard tire supplier for F1?",
+        "answer_1": "Michelin",
+        "answer_2": "Bridgestone",
+        "answer_3": "Pirelli",
+        "answer_4": "Goodyear",
+        "correct_answer": "3"
+    },
+    {
+        "id": "4",
+        "question": "Which driver has won the most races in a single season?",
+        "answer_1": "Sebastian Vettel",
+        "answer_2": "Lewis Hamilton",
+        "answer_3": "Michael Schumacher",
+        "answer_4": "Max Verstappen",
+        "correct_answer": "4"
+    },
+    {
+        "id": "5",
+        "question": "How many teams competed in the 2023 F1 season?",
+        "answer_1": "8 teams",
+        "answer_2": "9 teams",
+        "answer_3": "10 teams",
+        "answer_4": "12 teams",
+        "correct_answer": "3"
+    },
+    {
+        "id": "6",
+        "question": "Which driver has the most pole positions in F1 history?",
+        "answer_1": "Sebastian Vettel",
+        "answer_2": "Max Verstappen",
+        "answer_3": "Lewis Hamilton",
+        "answer_4": "Michael Schumacher",
+        "correct_answer": "3"
+    },
+    {
+        "id": "7",
+        "question": "Which track is known as the 'Temple of Speed'?",
+        "answer_1": "Red Bull Ring",
+        "answer_2": "Monaco Circuit",
+        "answer_3": "Autodromo Nazionale Monza",
+        "answer_4": "Silverstone",
+        "correct_answer": "3"
+    },
+    {
+        "id": "8",
+        "question": "Which driver has the most podium finishes?",
+        "answer_1": "Sebastian Vettel",
+        "answer_2": "Max Verstappen",
+        "answer_3": "Lewis Hamilton",
+        "answer_4": "Michael Schumacher",
+        "correct_answer": "3"
+    },
+    {
+        "id": "9",
+        "question": "In which year did the first hybrid engines appear in F1?",
+        "answer_1": "2011",
+        "answer_2": "2012",
+        "answer_3": "2014",
+        "answer_4": "2013",
+        "correct_answer": "3"
+    },
+    {
+        "id": "10",
+        "question": "Which country has produced the most world champions?",
+        "answer_1": "Italy",
+        "answer_2": "United Kingdom",
+        "answer_3": "Germany",
+        "answer_4": "Brazil",
+        "correct_answer": "2"
+    },
+    {
+        "id": "11",
+        "question": "What is the standard transmission type in F1?",
+        "answer_1": "Manual",
+        "answer_2": "Semi-automatic",
+        "answer_3": "Automatic",
+        "answer_4": "Dual-clutch",
+        "correct_answer": "2"
+    },
+    {
+        "id": "12",
+        "question": "How many points are awarded for a race win?",
+        "answer_1": "20 points",
+        "answer_2": "25 points",
+        "answer_3": "10 points",
+        "answer_4": "15 points",
+        "correct_answer": "2"
+    },
+    {
+        "id": "13",
+        "question": "Which constructor has the most championship titles?",
+        "answer_1": "Mercedes",
+        "answer_2": "Ferrari",
+        "answer_3": "Red Bull",
+        "answer_4": "McLaren",
+        "correct_answer": "2"
+    },
+    {
+        "id": "14",
+        "question": "Which F1 circuit features the famous Eau Rouge corner?",
+        "answer_1": "Silverstone",
+        "answer_2": "Suzuka",
+        "answer_3": "Circuit de Monaco",
+        "answer_4": "Spa-Francorchamps",
+        "correct_answer": "4"
+    },
+    {
+        "id": "15",
+        "question": "Who was the first F1 world champion?",
+        "answer_1": "Juan Manuel Fangio",
+        "answer_2": "Alberto Ascari",
+        "answer_3": "Giuseppe Farina",
+        "answer_4": "Jim Clark",
+        "correct_answer": "3"
+    },
+    {
+        "id": "16",
+        "question": "Which constructor did Ayrton Senna win his first WDC with?",
+        "answer_1": "Ferrari",
+        "answer_2": "McLaren",
+        "answer_3": "Lotus",
+        "answer_4": "Williams",
+        "correct_answer": "2"
+    },
+    {
+        "id": "17",
+        "question": "Which country hosts the Yas Marina Circuit?",
+        "answer_1": "Qatar",
+        "answer_2": "Bahrain",
+        "answer_3": "United Arab Emirates",
+        "answer_4": "Saudi Arabia",
+        "correct_answer": "3"
+    },
+    {
+        "id": "18",
+        "question": "Which engine manufacturer returned to F1 in 2015 with McLaren?",
+        "answer_1": "Toyota",
+        "answer_2": "Honda",
+        "answer_3": "Renault",
+        "answer_4": "BMW",
+        "correct_answer": "2"
+    },
+    {
+        "id": "19",
+        "question": "Which of these teams used the famous 'double diffuser' in 2009?",
+        "answer_1": "Red Bull",
+        "answer_2": "Brawn GP",
+        "answer_3": "Ferrari",
+        "answer_4": "Renault",
+        "correct_answer": "2"
+    },
+    {
+        "id": "20",
+        "question": "Which Grand Prix is known as the Crown Jewel of F1?",
+        "answer_1": "Monaco Grand Prix",
+        "answer_2": "Singapore Grand Prix",
+        "answer_3": "Silverstone Grand Prix",
+        "answer_4": "Abu Dhabi Grand Prix",
+        "correct_answer": "1"
+    },
+    {
+        "id": "21",
+        "question": "What was the name of Michael Schumacher's first F1 team?",
+        "answer_1": "Ferrari",
+        "answer_2": "Benetton",
+        "answer_3": "Mercedes",
+        "answer_4": "Jordan",
+        "correct_answer": "4"
+    },
+    {
+        "id": "22",
+        "question": "Which F1 circuit features the 'Wall of Champions'?",
+        "answer_1": "Circuit Gilles Villeneuve",
+        "answer_2": "Monza",
+        "answer_3": "Silverstone",
+        "answer_4": "Spa-Francorchamps",
+        "correct_answer": "1"
+    },
+    {
+        "id": "23",
+        "question": "Who was the youngest driver to start an F1 race?",
+        "answer_1": "Fernando Alonso",
+        "answer_2": "Max Verstappen",
+        "answer_3": "Sebastian Vettel",
+        "answer_4": "Lando Norris",
+        "correct_answer": "2"
+    },
+    {
+        "id": "24",
+        "question": "What color is the flag used to signal a slippery track?",
+        "answer_1": "Blue",
+        "answer_2": "Yellow",
+        "answer_3": "White and Red Striped",
+        "answer_4": "Red and Yellow Striped",
+        "correct_answer": "4"
+    },
+    {
+        "id": "25",
+        "question": "Which F1 team is nicknamed 'The Silver Arrows'?",
+        "answer_1": "Ferrari",
+        "answer_2": "Red Bull Racing",
+        "answer_3": "Mercedes",
+        "answer_4": "McLaren",
+        "correct_answer": "3"
+    },
+    {
+        "id": "26",
+        "question": "What is the longest circuit on the 2024 F1 calendar?",
+        "answer_1": "Suzuka",
+        "answer_2": "Spa-Francorchamps",
+        "answer_3": "Silverstone",
+        "answer_4": "Monaco",
+        "correct_answer": "2"
+    },
+    {
+        "id": "27",
+        "question": "Which driver is nicknamed 'Honey Badger'?",
+        "answer_1": "Lando Norris",
+        "answer_2": "Max Verstappen",
+        "answer_3": "Valtteri Bottas",
+        "answer_4": "Daniel Ricciardo",
+        "correct_answer": "4"
+    },
+    {
+        "id": "28",
+        "question": "What is the fastest recorded speed in an F1 car during a race?",
+        "answer_1": "360 km/h",
+        "answer_2": "372 km/h",
+        "answer_3": "378 km/h",
+        "answer_4": "388 km/h",
+        "correct_answer": "4"
+    },
+    {
+        "id": "29",
+        "question": "Which constructor introduced the 'fan car' concept?",
+        "answer_1": "Ferrari",
+        "answer_2": "McLaren",
+        "answer_3": "Brabham",
+        "answer_4": "Williams",
+        "correct_answer": "3"
+    },
+    {
+        "id": "30",
+        "question": "Which F1 driver holds the record for most consecutive podiums? (across seasons)",
+        "answer_1": "Ayrton Senna",
+        "answer_2": "Lewis Hamilton",
+        "answer_3": "Sebastian Vettel",
+        "answer_4": "Michael Schumacher",
+        "correct_answer": "4"
+    },
+    {
+        "id": "31",
+        "question": "Which team was known for its distinctive black and gold livery?",
+        "answer_1": "Lotus",
+        "answer_2": "Jordan",
+        "answer_3": "McLaren",
+        "answer_4": "Sauber",
+        "correct_answer": "1"
+    },
+    {
+        "id": "32",
+        "question": "Which F1 driver earned the nickname 'The Iceman'?",
+        "answer_1": "Kimi Räikkönen",
+        "answer_2": "Fernando Alonso",
+        "answer_3": "Lewis Hamilton",
+        "answer_4": "Nico Rosberg",
+        "correct_answer": "1"
+    },
+    {
+        "id": "33",
+        "question": "Which country hosted the first night race in F1?",
+        "answer_1": "Singapore",
+        "answer_2": "Bahrain",
+        "answer_3": "United States",
+        "answer_4": "Australia",
+        "correct_answer": "1"
+    },
+    {
+        "id": "34",
+        "question": "Which constructor had the infamous six-wheeled F1 car?",
+        "answer_1": "Ferrari",
+        "answer_2": "Williams",
+        "answer_3": "Tyrrell",
+        "answer_4": "McLaren",
+        "correct_answer": "3"
+    },
+    {
+        "id": "35",
+        "question": "Which driver is nicknamed 'Honey Badger'?",
+        "answer_1": "Lando Norris",
+        "answer_2": "Max Verstappen",
+        "answer_3": "Valtteri Bottas",
+        "answer_4": "Daniel Ricciardo",
+        "correct_answer": "4"
+    },
+    {
+        "id": "36",
+        "question": "Which driver famously won a race on three wheels due to a puncture?",
+        "answer_1": "Lewis Hamilton",
+        "answer_2": "Ayrton Senna",
+        "answer_3": "Nigel Mansell",
+        "answer_4": "Gilles Villeneuve",
+        "correct_answer": "1"
+    },
+    {
+        "id": "37",
+        "question": "Which F1 team has a base in Woking, UK?",
+        "answer_1": "Ferrari",
+        "answer_2": "Red Bull",
+        "answer_3": "Aston Martin",
+        "answer_4": "McLaren",
+        "correct_answer": "4"
+    },
+    {
+        "id": "38",
+        "question": "What is the term for replacing tires during a race?",
+        "answer_1": "Service",
+        "answer_2": "Tire swap",
+        "answer_3": "Changeover",
+        "answer_4": "Pit stop",
+        "correct_answer": "4"
+    },
+    {
+        "id": "39",
+        "question": "Who holds the record for the longest F1 career as of 2024?",
+        "answer_1": "Fernando Alonso",
+        "answer_2": "Michael Schumacher",
+        "answer_3": "Kimi Räikkönen",
+        "answer_4": "Rubens Barrichello",
+        "correct_answer": "1"
+    },
+    {
+        "id": "40",
+        "question": "Which team did Fernando Alonso win his two World Championships with?",
+        "answer_1": "McLaren",
+        "answer_2": "Renault",
+        "answer_3": "Ferrari",
+        "answer_4": "Red Bull",
+        "correct_answer": "2"
+    },
+    {
+        "id": "42",
+        "question": "Who was the youngest driver to win a Formula 1 race?",
+        "answer_1": "Sebastian Vettel",
+        "answer_2": "Max Verstappen",
+        "answer_3": "Charles Leclerc",
+        "answer_4": "Lewis Hamilton",
+        "correct_answer": "2"
+    },
+    {
+        "id": "43",
+        "question": "Which driver famously said over the radio: 'Leave me alone, I know what I'm doing'?",
+        "answer_1": "Kimi Räikkönen",
+        "answer_2": "Fernando Alonso",
+        "answer_3": "Sebastian Vettel",
+        "answer_4": "Valtteri Bottas",
+        "correct_answer": "1"
+    },
+    {
+        "id": "46",
+        "question": "Which current 2024 F1 team started life as 'Jordan'?",
+        "answer_1": "Mercedes",
+        "answer_2": "Aston Martin",
+        "answer_3": "Alpha Tauri",
+        "answer_4": "Alpine",
+        "correct_answer": "4"
+    },
+    {
+        "id": "47",
+        "question": "Which F1 race holds the record for the most overtakes in a single race as of 2024?",
+        "answer_1": "Brazil 2012",
+        "answer_2": "China 2016",
+        "answer_3": "Turkey 2011",
+        "answer_4": "Netherlands 2023",
+        "correct_answer": "4"
+    },
+    {
+        "id": "50",
+        "question": "Which driver set the fastest lap in the first-ever F1 World Championship race?",
+        "answer_1": "Juan Manuel Fangio",
+        "answer_2": "Giuseppe Farina",
+        "answer_3": "Luigi Fagioli",
+        "answer_4": "Stirling Moss",
+        "correct_answer": "2"
+    },
+    {
+        "id": "53",
+        "question": "What is the maximum number of gears allowed in an F1 car?",
+        "answer_1": "6",
+        "answer_2": "7",
+        "answer_3": "8",
+        "answer_4": "9",
+        "correct_answer": "3"
+    },
+    {
+        "id": "54",
+        "question": "Which driver holds the record for the most fastest laps in F1 as of 2024?",
+        "answer_1": "Lewis Hamilton",
+        "answer_2": "Sebastian Vettel",
+        "answer_3": "Max Verstappen",
+        "answer_4": "Michael Schumacher",
+        "correct_answer": "4"
+    },
+    {
+        "id": "55",
+        "question": "What year was the halo safety device introduced?",
+        "answer_1": "2015",
+        "answer_2": "2016",
+        "answer_3": "2017",
+        "answer_4": "2018",
+        "correct_answer": "4"
+    },
+    {
+        "id": "56",
+        "question": "Which F1 team changed its name to Alpine in 2021?",
+        "answer_1": "Renault",
+        "answer_2": "Force India",
+        "answer_3": "Toro Rosso",
+        "answer_4": "Sauber",
+        "correct_answer": "1"
+    },
+    {
+        "id": "59",
+        "question": "Which iconic sponsor was associated with McLaren for decades?",
+        "answer_1": "Shell",
+        "answer_2": "Gulf",
+        "answer_3": "Marlboro",
+        "answer_4": "ExxonMobil",
+        "correct_answer": "3"
+    }
+]
