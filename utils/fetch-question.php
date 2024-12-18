@@ -1,10 +1,12 @@
 <?php
-header("Access-Control-Allow-Origin: *");
-header("Content-Type: application/json");
-// Handling CORS (Cross-Origin Resource Sharing)
 
 // utils/fetch-question.php
 
+// Handling CORS (Cross-Origin Resource Sharing)
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json");
+
+// Include db connection
 include 'db.php';
 
 // Fetch questions from db
@@ -18,17 +20,17 @@ function getQuestions()
     if (!isset($_SESSION['viewed_questions'])) {
         $_SESSION['viewed_questions'] = [];
     }
-
     $viewed_ids = !empty($_SESSION['viewed_questions'])
         ? implode(',', $_SESSION['viewed_questions'])
         : '0';
 
-    // Select 10 questions that have not already been viewed, order randomly.
+    // SQL query to the db that selects 10 questions that have not already been viewed, ordered randomly.
     $sql = "SELECT * FROM questions
             WHERE id NOT IN ($viewed_ids)
             ORDER BY RAND()
             LIMIT 10";
 
+    // Handle SQL query result and encode to json
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         $questions = [];
@@ -41,7 +43,9 @@ function getQuestions()
         $_SESSION['viewed_questions'] = []; // Reset session when all questions are viewed, so user can start again
         echo json_encode(["message" => "All questions have been viewed. Restarting."]);
     }
+    // Close db donnection
     $conn->close();
 }
 
+// Execute the method
 getQuestions();

@@ -1,5 +1,6 @@
 // scripts/script.js
 
+// Global variables for current question index, the score, and a array of questions
 let currentQuestionIndex = 0;
 let score = 0;
 let questions = [];
@@ -7,17 +8,17 @@ let questions = [];
 // Function to fetch 10 questions from the backend
 async function fetchQuestions() {
     // local fetch from local php file:
-    // const response = await fetch("./utils/fetch-question.php");
+    const response = await fetch("./utils/fetch-question.php");
 
-    // remote fetch from server:
-    const response = await fetch("https://viktorhogberg.infinityfreeapp.com/");
+    // remote fetch from server (not used because infinityfree refuses to work properly)
+    // const response = await fetch("https://viktorhogberg.infinityfreeapp.com/");
     const data = await response.json();
 
     if (data.message) {
         console.log(data.message);
         fetchQuestions(); // Restart quiz if all questions have been viewed
     } else {
-        questions = data; // Store questions in the global variable
+        questions = data; // Store questions in the global questions array
         currentQuestionIndex = 0;
         score = 0;
         displayQuestion();
@@ -26,9 +27,13 @@ async function fetchQuestions() {
 
 // Function to display a question
 function displayQuestion() {
+    // If all questions are not answered yet
     if (currentQuestionIndex < questions.length) {
+        // Grab the question
         const question = questions[currentQuestionIndex];
+        // Change the html text content
         document.getElementById("question").textContent = question.question;
+        // Display current question user is on in the round
         document.getElementById("current-question").textContent = currentQuestionIndex + "/" + questions.length + " answered.";
 
         // Set answers and reset their appearance
@@ -42,8 +47,8 @@ function displayQuestion() {
             answer.classList.remove("picked-answer");
             answer.classList.remove("disabled");
         });
-    } else {
-        // Show modal at the end of the round
+    } else { // All questions answered
+        // Show modal game over dialog with score at the end of the round
         document.getElementById("score").textContent = score + "/" + questions.length;
         document.getElementById("game-over-modal").showModal();
     }
@@ -55,7 +60,7 @@ document.querySelectorAll(".answer").forEach(answer => {
 
         // Grab all answers and add correct or incorrect subclass to them
         document.querySelectorAll(".answer").forEach(a => {
-            if (a.dataset.correct === "true"){
+            if (a.dataset.correct === "true") {
                 // If answer is correct, add the subclass for it
                 a.classList.add("correct")
             }
@@ -63,6 +68,7 @@ document.querySelectorAll(".answer").forEach(answer => {
                 // If answer is incorrect, add the subclass for it
                 a.classList.add("incorrect")
             }
+            // Add disabled class so further answers cant be clicked once one has been clicked
             a.classList.add("disabled");
         });
 
@@ -76,33 +82,32 @@ document.querySelectorAll(".answer").forEach(answer => {
     });
 });
 
-// Event listener for next question
+// Event listener for next question question (it is possible to skip questions also)
 document.getElementById("next-question").addEventListener("click", () => {
     currentQuestionIndex++;
     displayQuestion();
 });
 
-// Restart quiz logic
+// Restart quiz, just fetch new questions
 function restartQuiz() {
     fetchQuestions();
 }
 
-// Close modal and restart quiz
+// Close game-over-modal with button and restart quiz
 document.getElementById("close-game-over-modal-button").addEventListener("click", () => {
     document.getElementById("game-over-modal").close();
     restartQuiz();
 });
 
-// Initialize quiz
+// Initialize quiz at start
 fetchQuestions();
-
 
 // For header menu button dropdown list
 document.addEventListener('DOMContentLoaded', function () {
     const menuButton = document.getElementById('hamburger-menu-button');
     const menuList = document.getElementById('menu-list');
 
-    // Toggle the menu on click
+    // Toggle the menu on click (block is showed, none is hidden)
     menuButton.addEventListener('click', function () {
         if (menuList.style.display === 'block') {
             menuList.style.display = 'none';
@@ -124,10 +129,12 @@ document.getElementById("dark-mode-button").addEventListener("click", () => {
     document.documentElement.classList.toggle('dark-mode');
     const darkModeButton = document.getElementById("hamburger-menu-icon");
 
-    // Check the file name part of the src
+    // Check the file name part of the src with endsWith
     if (!darkModeButton.src.endsWith("hamburger-menu-icon-dark-mode.svg")) {
+        // Dark mode file
         darkModeButton.src = "assets/icons/hamburger-menu-icon-dark-mode.svg";
     } else {
+        // Standard file
         darkModeButton.src = "assets/icons/hamburger-menu-icon.svg";
     }
 });
@@ -137,6 +144,7 @@ document.getElementById("how-to-play-modal-button").addEventListener("click", ()
     document.getElementById("how-to-play-modal").showModal();
 });
 
-document.getElementById("close-modal-button").addEventListener("click", () => {
+// Function to close "how to play" modal window
+document.getElementById("close-how-to-play-modal-button").addEventListener("click", () => {
     document.getElementById("how-to-play-modal").close();
 });

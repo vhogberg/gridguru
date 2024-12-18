@@ -2,36 +2,32 @@
 <html lang="en">
 
 <head>
-    <title>F1 Quiz</title>
+    <title>GridGuru</title>
     <meta charset="UTF-8">
 
-    <meta name="description" content="F1 Quiz">
+    <meta name="description" content="GridGuru F1 Quiz - How much do you know about F1?">
     <meta name="author" content="Viktor Högberg">
     <meta name="generator" content="Visual Studio Code">
-    <meta name="keywords" content="Formula 1, Racing, F1, Grand Prix, Quiz, Game">
+    <meta name="keywords" content="Formula 1, Racing, F1, Grand Prix, Quiz, Game, GridGuru">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Stop dates from being formatted on mobile as phone numbers -->
     <meta name="format-detection" content="telephone=no">
 
     <link rel="stylesheet" href="styles/style.css?rnd=12345">
-
 </head>
 
 <body>
-
     <header>
         <div id="menu-dropdown-list-container">
             <button id="hamburger-menu-button">
                 <img id="hamburger-menu-icon" src="assets/icons/hamburger-menu-icon.svg" alt="Burger menu icon">
             </button>
             <ul id="menu-list" class="menu-list">
-                <button id="how-to-play-modal-button">How to play</button>
-                <br>
-                <button id="dark-mode-button">Dark mode</button>
+                <li><button id="how-to-play-modal-button">How to play</button></li>
+                <li><button id="dark-mode-button">Dark mode</button></li>
             </ul>
         </div>
-
 
         <div id="logo-title-container">
             <img id="logo" src="assets/logos/GridGuro-logo.png" alt="Website logo">
@@ -65,7 +61,7 @@
             <h3>Well done! 🎉</h3>
             <p>You scored: <span id="score">Error</span>.</p>
             <p>You can continue playing with more questions below.</p>
-            <button  id="close-game-over-modal-button">Play again</button>
+            <button id="close-game-over-modal-button">Play again</button>
         </dialog>
 
         <dialog class="modalWindow" id="how-to-play-modal">
@@ -74,13 +70,10 @@
             <p>They are played in sets of 10 where you will see your score after each set.</p>
             <p>Once all questions have been answered, you can go through them again!</p>
             <p>Have fun!</p>
-            <button id="close-modal-button">Close</button>
+            <button id="close-how-to-play-modal-button">Close</button>
         </dialog>
-
     </div>
 
     <script src="scripts/script.js"></script>
-
 </body>
-
 </html>

@@ -45,16 +45,39 @@ h1 {
     color: var(--element-color);
 }
 
+span {
+    font-size: 16px;
+}
+
+p {
+    font-size: 18px;
+}
+
 header {
     position: relative;
     z-index: 10;
     /* Ensures the header and its dropdown list have precedence */
 }
 
+body {
+    padding: 1em;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-color);
+}
+
 #logo-title-container {
     display: grid;
     align-items: center;
     max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+    max-width: 200px;
+    max-height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -118,29 +141,6 @@ button {
     border: none;
 }
 
-span {
-    font-size: 16px;
-}
-
-p {
-    font-size: 18px;
-}
-
-body {
-    padding: 1em;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--background-color);
-}
-
-#logo {
-    max-width: 200px;
-    max-height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #question {
     max-width: 800px;
     margin: 8px 0px;
@@ -195,14 +195,11 @@ body {
     pointer-events: none;
 }
 
-
-
 #next-question-container {
     display: flex;
     gap: 15px;
     align-items: center;
 }
-
 
 /* Modal window */
 dialog {
@@ -230,9 +227,7 @@ dialog::backdrop {
     background: rgba(0, 0, 0, 0.384);
 }
 
-
-
-/* Mobile (0 - 500px width) */
+/* For smaller screens (0 - 500px width) */
 @media screen and (max-width: 500px) {
 
     /* Slightly smaller logo */
@@ -245,7 +240,7 @@ dialog::backdrop {
     h1 {
         font-size: 45px;
     }
-    
+
     h2 {
         font-size: 20px;
         text-align: center;
@@ -266,30 +261,23 @@ dialog::backdrop {
 
     body {
         display: flex;
-        flex-direction: column; /* Arrange items vertically */
-        justify-content: center; /* Center items vertically */
-        align-items: center; /* Center items horizontally */
-        margin: 0; /* Remove default margin */
+        flex-direction: column;
+        /* Arrange items vertically */
+        justify-content: center;
+        /* Center items vertically */
+        align-items: center;
+        /* Center items horizontally */
+        margin: 0;
+        /* Remove default margin */
         box-sizing: border-box;
-        max-width: none; /* Allow body to grow and fill available space */
+        max-width: none;
+        /* Allow body to grow and fill available space */
     }
-    
-    body > * {
-        flex: 1; /* Allow children to grow and fill available space */
+
+    body>* {
+        flex: 1;
+        /* Allow children to grow and fill available space */
         width: calc(100% - 0.3em);
         box-sizing: border-box;
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-

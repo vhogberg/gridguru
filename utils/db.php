@@ -1,8 +1,9 @@
 <?php
 // utils/db.php
 
-/* DB INFO
-Table: f1_quiz
+/* DB INFO BELOW
+Table: questions
+
 Columns:
 id: int
 answer_1: varchar
@@ -11,7 +12,7 @@ answer_3: varchar
 answer_4: varchar
 corrent_answer: int (1-4)
 
-SQL QUERY:
+SQL QUERY USED TO CREATE TABLE:
 CREATE TABLE questions (
     id INT AUTO_INCREMENT PRIMARY KEY,
     question TEXT,
@@ -26,9 +27,9 @@ CREATE TABLE questions (
 
 // Connect to MySQL database
 function getDbConnection() {
-    $servername = "localhost"; //  database server
-    $username = "root";        //  database username
-    $password = "";            //  database password
+    $servername = "localhost"; //  database server (local used)
+    $username = "root";        //  database username (xampp default)
+    $password = "";            //  database password (xampp default)
     $dbname = "f1_quiz";       //  database name
 
     // Create connection
@@ -38,6 +39,7 @@ function getDbConnection() {
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
+    // Return the connection (used in fetch-question.php)
     return $conn;
 }
 ?>
