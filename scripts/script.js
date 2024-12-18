@@ -6,21 +6,31 @@ let questions = [];
 
 // Function to fetch 10 questions from the backend
 async function fetchQuestions() {
-    // local fetch with local php file:
-    // const response = await fetch("./utils/fetch-question.php");
 
-    // remote fetch from server:
-    const response = await fetch("https://viktorhogberg.infinityfreeapp.com/");
-    const data = await response.json();
+    try {
 
-    if (data.message) {
-        console.log(data.message);
-        fetchQuestions(); // Restart quiz if all questions have been viewed
-    } else {
+        // local fetch with local php file:
+        // const response = await fetch("./utils/fetch-question.php");
+
+        // remote fetch from server:
+        const response = await fetch("https://viktorhogberg.infinityfreeapp.com");
+        const data = await response.json();
+
+        if (data.message) {
+            console.log(data.message);
+            return await fetchQuestions(); // Restart quiz if all questions have been viewed
+        }
+
         questions = data; // Store questions in the global variable
         currentQuestionIndex = 0;
         score = 0;
         displayQuestion();
+
+    } catch (error) {
+        console.error("Error fetching questions:", error);
+        // a short delay before retrying
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        return await fetchQuestions();
     }
 }
 
@@ -55,7 +65,7 @@ document.querySelectorAll(".answer").forEach(answer => {
 
         // Grab all answers and add correct or incorrect subclass to them
         document.querySelectorAll(".answer").forEach(a => {
-            if (a.dataset.correct === "true"){
+            if (a.dataset.correct === "true") {
                 // If answer is correct, add the subclass for it
                 a.classList.add("correct")
             }
