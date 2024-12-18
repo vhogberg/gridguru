@@ -3,6 +3,11 @@
 
 include 'db.php';
 
+// Handling CORS (Cross-Origin Resource Sharing)
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json");
+
+// Fetch questions from db
 function getQuestions()
 {
     $conn = getDbConnection();

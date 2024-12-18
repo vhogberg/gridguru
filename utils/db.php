@@ -11,6 +11,17 @@ answer_3: varchar
 answer_4: varchar
 corrent_answer: int (1-4)
 
+SQL QUERY:
+CREATE TABLE questions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    question TEXT,
+    answer_1 VARCHAR(255),
+    answer_2 VARCHAR(255),
+    answer_3 VARCHAR(255),
+    answer_4 VARCHAR(255),
+    correct_answer INT
+);
+
 */
 
 // Connect to MySQL database
