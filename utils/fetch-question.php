@@ -4,6 +4,8 @@
 
 // Handling CORS (Cross-Origin Resource Sharing)
 header("Access-Control-Allow-Origin: *");
+
+// Use JSON content type
 header("Content-Type: application/json");
 
 // Include db connection
@@ -12,7 +14,9 @@ include 'db.php';
 // Fetch questions from db
 function getQuestions()
 {
+    // Get the connection to the db
     $conn = getDbConnection();
+
     // Using session to prevent user from getting the same questions over and over
     session_start();
 
