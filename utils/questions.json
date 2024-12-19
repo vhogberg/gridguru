@@ -316,7 +316,7 @@
     },
     {
         "id": "36",
-        "question": "Which driver famously won a race on three wheels due to a puncture?",
+        "question": "Which driver famously won a race on three wheels due to a puncture in the 2020 British Grand Prix?",
         "answer_1": "Lewis Hamilton",
         "answer_2": "Ayrton Senna",
         "answer_3": "Nigel Mansell",
@@ -360,7 +360,7 @@
         "correct_answer": "2"
     },
     {
-        "id": "42",
+        "id": "41",
         "question": "Who was the youngest driver to win a Formula 1 race?",
         "answer_1": "Sebastian Vettel",
         "answer_2": "Max Verstappen",
@@ -369,7 +369,7 @@
         "correct_answer": "2"
     },
     {
-        "id": "43",
+        "id": "42",
         "question": "Which driver famously said over the radio: 'Leave me alone, I know what I'm doing'?",
         "answer_1": "Kimi Räikkönen",
         "answer_2": "Fernando Alonso",
@@ -378,7 +378,7 @@
         "correct_answer": "1"
     },
     {
-        "id": "46",
+        "id": "43",
         "question": "Which current 2024 F1 team started life as 'Jordan'?",
         "answer_1": "Mercedes",
         "answer_2": "Aston Martin",
@@ -387,7 +387,7 @@
         "correct_answer": "4"
     },
     {
-        "id": "47",
+        "id": "44",
         "question": "Which F1 race holds the record for the most overtakes in a single race as of 2024?",
         "answer_1": "Brazil 2012",
         "answer_2": "China 2016",
@@ -396,7 +396,7 @@
         "correct_answer": "4"
     },
     {
-        "id": "50",
+        "id": "45",
         "question": "Which driver set the fastest lap in the first-ever F1 World Championship race?",
         "answer_1": "Juan Manuel Fangio",
         "answer_2": "Giuseppe Farina",
@@ -405,7 +405,7 @@
         "correct_answer": "2"
     },
     {
-        "id": "53",
+        "id": "46",
         "question": "What is the maximum number of gears allowed in an F1 car?",
         "answer_1": "6",
         "answer_2": "7",
@@ -414,7 +414,7 @@
         "correct_answer": "3"
     },
     {
-        "id": "54",
+        "id": "47",
         "question": "Which driver holds the record for the most fastest laps in F1 as of 2024?",
         "answer_1": "Lewis Hamilton",
         "answer_2": "Sebastian Vettel",
@@ -423,7 +423,7 @@
         "correct_answer": "4"
     },
     {
-        "id": "55",
+        "id": "48",
         "question": "What year was the halo safety device introduced?",
         "answer_1": "2015",
         "answer_2": "2016",
@@ -432,7 +432,7 @@
         "correct_answer": "4"
     },
     {
-        "id": "56",
+        "id": "49",
         "question": "Which F1 team changed its name to Alpine in 2021?",
         "answer_1": "Renault",
         "answer_2": "Force India",
@@ -441,12 +441,552 @@
         "correct_answer": "1"
     },
     {
-        "id": "59",
+        "id": "50",
         "question": "Which iconic sponsor was associated with McLaren for decades?",
         "answer_1": "Shell",
         "answer_2": "Gulf",
         "answer_3": "Marlboro",
         "answer_4": "ExxonMobil",
+        "correct_answer": "3"
+    },
+    {
+        "id": "51",
+        "question": "Which driver earned the nickname 'The Professor' for his strategic approach?",
+        "answer_1": "Alain Prost",
+        "answer_2": "Niki Lauda",
+        "answer_3": "Ayrton Senna",
+        "answer_4": "Nigel Mansell",
+        "correct_answer": "1"
+    },
+    {
+        "id": "52",
+        "question": "Which team did Michael Schumacher win his first World Championship with?",
+        "answer_1": "Ferrari",
+        "answer_2": "Jordan",
+        "answer_3": "Mercedes",
+        "answer_4": "Benetton",
+        "correct_answer": "4"
+    },
+    {
+        "id": "53",
+        "question": "Which driver won the 2024 Monaco Grand Prix?",
+        "answer_1": "Max Verstappen",
+        "answer_2": "Lando Norris",
+        "answer_3": "George Russell",
+        "answer_4": "Charles Leclerc",
+        "correct_answer": "4"
+    },
+    {
+        "id": "54",
+        "question": "Which constructor pioneered the carbon fiber monocoque chassis?",
+        "answer_1": "Lotus",
+        "answer_2": "Brabham",
+        "answer_3": "Williams",
+        "answer_4": "McLaren",
+        "correct_answer": "4"
+    },
+    {
+        "id": "55",
+        "question": "Which F1 driver famously jumped into a swimming pool after a victory in Monaco?",
+        "answer_1": "James Hunt",
+        "answer_2": "Graham Hill",
+        "answer_3": "Riccardo Patrese",
+        "answer_4": "Daniel Ricciardo",
+        "correct_answer": "4"
+    },
+    {
+        "id": "56",
+        "question": "What does the safety car driver use to signal the end of a safety car period?",
+        "answer_1": "Flashing lights",
+        "answer_2": "Turning off the lights",
+        "answer_3": "Waving a green flag",
+        "answer_4": "Using a horn",
+        "correct_answer": "2"
+    },
+    {
+        "id": "57",
+        "question": "Which F1 team rebranded to Aston Martin in 2021?",
+        "answer_1": "Renault",
+        "answer_2": "Racing Point",
+        "answer_3": "Toro Rosso",
+        "answer_4": "Force India",
+        "correct_answer": "2"
+    },
+    {
+        "id": "58",
+        "question": "Who was the first driver to win seven World Championships?",
+        "answer_1": "Lewis Hamilton",
+        "answer_2": "Juan Manuel Fangio",
+        "answer_3": "Alain Prost",
+        "answer_4": "Michael Schumacher",
+        "correct_answer": "4"
+    },
+    {
+        "id": "59",
+        "question": "What is the name of the corner after Eau Rouge at Spa?",
+        "answer_1": "Blanchimont",
+        "answer_2": "Stavelot",
+        "answer_3": "Pouhon",
+        "answer_4": "Raidillon",
+        "correct_answer": "4"
+    },
+    {
+        "id": "60",
+        "question": "Which driver had the most wins in the 2021 season?",
+        "answer_1": "Max Verstappen",
+        "answer_2": "Lewis Hamilton",
+        "answer_3": "Sergio Pérez",
+        "answer_4": "Valtteri Bottas",
+        "correct_answer": "1"
+    },
+    {
+        "id": "61",
+        "question": "Which team did Nico Rosberg win his World Championship with?",
+        "answer_1": "Ferrari",
+        "answer_2": "McLaren",
+        "answer_3": "Williams",
+        "answer_4": "Mercedes",
+        "correct_answer": "4"
+    },
+    {
+        "id": "62",
+        "question": "Who was the first female driver to compete in Formula 1?",
+        "answer_1": "Maria Teresa de Filippis",
+        "answer_2": "Lella Lombardi",
+        "answer_3": "Desiré Wilson",
+        "answer_4": "Giovanna Amati",
+        "correct_answer": "1"
+    },
+    {
+        "id": "63",
+        "question": "Who holds the record for the most points scored in a single F1 season?",
+        "answer_1": "Max Verstappen",
+        "answer_2": "Lewis Hamilton",
+        "answer_3": "Sebastian Vettel",
+        "answer_4": "Nico Rosberg",
+        "correct_answer": "1"
+    },
+    {
+        "id": "64",
+        "question": "Which driver survived a fiery crash at the 2020 Bahrain Grand Prix?",
+        "answer_1": "Kevin Magnussen",
+        "answer_2": "Esteban Ocon",
+        "answer_3": "Pierre Gasly",
+        "answer_4": "Romain Grosjean",
+        "correct_answer": "4"
+    },
+    {
+        "id": "65",
+        "question": "Who was known as 'Il Leone' (The Lion) by Italian fans?",
+        "answer_1": "Nigel Mansell",
+        "answer_2": "Michael Schumacher",
+        "answer_3": "Jean Alesi",
+        "answer_4": "Gilles Villeneuve",
+        "correct_answer": "1"
+    },
+    {
+        "id": "66",
+        "question": "Which circuit hosts the Canadian Grand Prix?",
+        "answer_1": "Atlantic Motorsport Park",
+        "answer_2": "Mont Tremblant Circuit",
+        "answer_3": "Mosport Park",
+        "answer_4": "Circuit Gilles Villeneuve",
+        "correct_answer": "4"
+    },
+    {
+        "id": "67",
+        "question": "Which is the only driver to have achieved the 'Triple Crown of Motorsport'?",
+        "answer_1": "Fernando Alonso",
+        "answer_2": "Graham Hill",
+        "answer_3": "Jim Clark",
+        "answer_4": "Ayrton Senna",
+        "correct_answer": "2"
+    },
+    {
+        "id": "68",
+        "question": "Which driver holds the record of the longest streak without receiving a driving penalty point?",
+        "answer_1": "Fernando Alonso",
+        "answer_2": "Lewis Hamilton",
+        "answer_3": "Jenson Button",
+        "answer_4": "Nico Rosberg",
+        "correct_answer": "4"
+    },
+    {
+        "id": "69",
+        "question": "What is the maximum number of points a driver can earn in a single race?",
+        "answer_1": "20",
+        "answer_2": "25",
+        "answer_3": "26",
+        "answer_4": "28",
+        "correct_answer": "3"
+    },
+    {
+        "id": "70",
+        "question": "Who was the first driver to win a World Championship for Red Bull Racing?",
+        "answer_1": "Mark Webber",
+        "answer_2": "Sebastian Vettel",
+        "answer_3": "David Coulthard",
+        "answer_4": "Max Verstappen",
+        "correct_answer": "2"
+    },
+    {
+        "id": "71",
+        "question": "In which year did Lewis Hamilton make his F1 debut?",
+        "answer_1": "2005",
+        "answer_2": "2006",
+        "answer_3": "2007",
+        "answer_4": "2008",
+        "correct_answer": "3"
+    },
+    {
+        "id": "72",
+        "question": "What year did Ferrari last win a Constructors' Championship as of 2024?",
+        "answer_1": "2007",
+        "answer_2": "2008",
+        "answer_3": "2010",
+        "answer_4": "2012",
+        "correct_answer": "2"
+    },
+    {
+        "id": "73",
+        "question": "Which team did Fernando Alonso drive for in his first F1 race?",
+        "answer_1": "Minardi",
+        "answer_2": "Renault",
+        "answer_3": "Ferrari",
+        "answer_4": "McLaren",
+        "correct_answer": "1"
+    },
+    {
+        "id": "74",
+        "question": "Which circuit is located in São Paulo, Brazil?",
+        "answer_1": "Interlagos",
+        "answer_2": "Brasilia Circuit",
+        "answer_3": "Jacarepaguá",
+        "answer_4": "Curitiba Circuit",
+        "correct_answer": "1"
+    },
+    {
+        "id": "75",
+        "question": "Which F1 circuit is nicknamed 'The Green Hell'?",
+        "answer_1": "Spa-Francorchamps",
+        "answer_2": "Nürburgring Nordschleife",
+        "answer_3": "Monza",
+        "answer_4": "Suzuka",
+        "correct_answer": "2"
+    },
+    {
+        "id": "76",
+        "question": "What is the highest altitude circuit on the 2024 F1 calendar?",
+        "answer_1": "Interlagos",
+        "answer_2": "Monza",
+        "answer_3": "Spa-Francorchamps",
+        "answer_4": "Mexico City",
+        "correct_answer": "4"
+    },
+    {
+        "id": "77",
+        "question": "Which driver holds the record for most consecutive WDC wins as of 2024?",
+        "answer_1": "Michael Schumacher",
+        "answer_2": "Lewis Hamilton",
+        "answer_3": "Sebastian Vettel",
+        "answer_4": "Juan Manuel Fangio",
+        "correct_answer": "1"
+    },
+    {
+        "id": "78",
+        "question": "Who is the only driver to have won a race in every full season they competed in?",
+        "answer_1": "Michael Schumacher",
+        "answer_2": "Lewis Hamilton",
+        "answer_3": "Ayrton Senna",
+        "answer_4": "Juan Manuel Fangio",
+        "correct_answer": "4"
+    },
+    {
+        "id": "79",
+        "question": "Who is the only driver to have won a World Championship with Ferrari and McLaren?",
+        "answer_1": "Niki Lauda",
+        "answer_2": "Alain Prost",
+        "answer_3": "Kimi Räikkönen",
+        "answer_4": "Fernando Alonso",
+        "correct_answer": "1"
+    },
+    {
+        "id": "80",
+        "question": "Which driver has the most Grand Prix entries without a win?",
+        "answer_1": "Andrea de Cesaris",
+        "answer_2": "Nick Heidfeld",
+        "answer_3": "Kevin Magnussen",
+        "answer_4": "Nico Hülkenberg",
+        "correct_answer": "4"
+    },
+    {
+        "id": "81",
+        "question": "Which is the only driver to have won their debut Formula 1 race?",
+        "answer_1": "Jacques Villeneuve",
+        "answer_2": "Lewis Hamilton",
+        "answer_3": "Giancarlo Baghetti",
+        "answer_4": "Ayrton Senna",
+        "correct_answer": "3"
+    },
+    {
+        "id": "82",
+        "question": "Who holds the record for being the youngest when they secured their first pole position?",
+        "answer_1": "Max Verstappen",
+        "answer_2": "Fernando Alonso",
+        "answer_3": "Charles Leclerc",
+        "answer_4": "Sebastian Vettel",
+        "correct_answer": "4"
+    },
+    {
+        "id": "83",
+        "question": "Which driver has the most race wins without ever winning a World Championship?",
+        "answer_1": "Stirling Moss",
+        "answer_2": "Rubens Barrichello",
+        "answer_3": "Mark Webber",
+        "answer_4": "Felipe Massa",
+        "correct_answer": "1"
+    },
+    {
+        "id": "84",
+        "question": "Who is the only driver to win a Formula 1 race in five different constructors' cars?",
+        "answer_1": "Fernando Alonso",
+        "answer_2": "Michael Schumacher",
+        "answer_3": "Alain Prost",
+        "answer_4": "Stirling Moss",
+        "correct_answer": "4"
+    },
+    {
+        "id": "85",
+        "question": "Which F1 circuit features the 'Swimming pool' section?",
+        "answer_1": "Monaco",
+        "answer_2": "Singapore",
+        "answer_3": "Baku",
+        "answer_4": "Miami",
+        "correct_answer": "1"
+    },
+    {
+        "id": "86",
+        "question": "What unique feature is included in the Miami Grand Prix paddock?",
+        "answer_1": "Fake Marina",
+        "answer_2": "Ice Rink",
+        "answer_3": "Rollercoaster",
+        "answer_4": "Nightclub",
+        "correct_answer": "1"
+    },
+    {
+        "id": "87",
+        "question": "Which driver won his first F1 title with a dramatic last-lap overtake in 2008?",
+        "answer_1": "Fernando Alonso",
+        "answer_2": "Lewis Hamilton",
+        "answer_3": "Sebastian Vettel",
+        "answer_4": "Kimi Räikkönen",
+        "correct_answer": "2"
+    },
+    {
+        "id": "88",
+        "question": "Which F1 team is known for its papaya orange livery?",
+        "answer_1": "Ferrari",
+        "answer_2": "Alpine",
+        "answer_3": "Williams",
+        "answer_4": "McLaren",
+        "correct_answer": "4"
+    },
+    {
+        "id": "89",
+        "question": "Which rule change introduced in 2021 aims to make F1 cars more competitive?",
+        "answer_1": "Budget cap",
+        "answer_2": "Hybrid engines",
+        "answer_3": "High-downforce wings",
+        "answer_4": "DRS zones",
+        "correct_answer": "1"
+    },
+    {
+        "id": "90",
+        "question": "Which driver famously crashed at the end of the 2021 Abu Dhabi GP bringing out the safety car?",
+        "answer_1": "George Russell",
+        "answer_2": "Sergio Perez",
+        "answer_3": "Nikita Mazepin",
+        "answer_4": "Nicholas Latifi",
+        "correct_answer": "4"
+    },
+    {
+        "id": "91",
+        "question": "Which two drivers famously collided at the start of the 2016 Spanish GP?",
+        "answer_1": "Max Verstappen and Daniel Ricciardo",
+        "answer_2": "Carlos Sainz and Kevin Magnussen",
+        "answer_3": "Fernando Alonso and Jenson Button",
+        "answer_4": "Lewis Hamilton and Nico Rosberg",
+        "correct_answer": "4"
+    },
+    {
+        "id": "92",
+        "question": "What material are modern F1 cars primarily made from?",
+        "answer_1": "Aluminum",
+        "answer_2": "Carbon Fiber",
+        "answer_3": "Titanium",
+        "answer_4": "Steel",
+        "correct_answer": "2"
+    },
+    {
+        "id": "93",
+        "question": "Which F1 driver famously crashed at the Singapore Grand Prix in 2008, leading to 'Crashgate'?",
+        "answer_1": "Fernando Alonso",
+        "answer_2": "Nelson Piquet Jr.",
+        "answer_3": "Felipe Massa",
+        "answer_4": "Kimi Räikkönen",
+        "correct_answer": "2"
+    },
+    {
+        "id": "94",
+        "question": "Which driver celebrated his victories with the iconic 'shoey' champagne drink?",
+        "answer_1": "Sebastian Vettel",
+        "answer_2": "Max Verstappen",
+        "answer_3": "Lewis Hamilton",
+        "answer_4": "Daniel Ricciardo",
+        "correct_answer": "4"
+    },
+    {
+        "id": "95",
+        "question": "Which country hosted the first ever Formula One race in 1950?",
+        "answer_1": "France",
+        "answer_2": "United Kingdom",
+        "answer_3": "Italy",
+        "answer_4": "Germany",
+        "correct_answer": "2"
+    },
+    {
+        "id": "96",
+        "question": "Which F1 race has a section known as 'Maggots and Becketts'?",
+        "answer_1": "Silverstone",
+        "answer_2": "Monza",
+        "answer_3": "Spa-Francorchamps",
+        "answer_4": "Suzuka",
+        "correct_answer": "1"
+    },
+    {
+        "id": "97",
+        "question": "Which F1 track is located in Spielberg, Austria?",
+        "answer_1": "Red Bull Ring",
+        "answer_2": "Hungaroring",
+        "answer_3": "Hockenheimring",
+        "answer_4": "Nürburgring",
+        "correct_answer": "1"
+    },
+    {
+        "id": "98",
+        "question": "What does the black-and-orange flag indicate in F1?",
+        "answer_1": "Disqualification",
+        "answer_2": "Mechanical Issue",
+        "answer_3": "Danger on Track",
+        "answer_4": "Mandatory Pit Stop",
+        "correct_answer": "2"
+    },
+    {
+        "id": "99",
+        "question": "Which F1 car number is associated with Lewis Hamilton?",
+        "answer_1": "13",
+        "answer_2": "63",
+        "answer_3": "33",
+        "answer_4": "44",
+        "correct_answer": "4"
+    },
+    {
+        "id": "100",
+        "question": "Which F1 team was caught and fined $100 million in the 'Spygate' controversy in 2007?",
+        "answer_1": "Ferrari",
+        "answer_2": "McLaren",
+        "answer_3": "Renault",
+        "answer_4": "Red Bull Racing",
+        "correct_answer": "2"
+    },
+    {
+        "id": "101",
+        "question": "What year did Sebastian Vettel win his first World Championship?",
+        "answer_1": "2009",
+        "answer_2": "2010",
+        "answer_3": "2011",
+        "answer_4": "2012",
+        "correct_answer": "2"
+    },
+    {
+        "id": "102",
+        "question": "What was the last season with refueling allowed in F1 races?",
+        "answer_1": "2008",
+        "answer_2": "2009",
+        "answer_3": "2010",
+        "answer_4": "2011",
+        "correct_answer": "2"
+    },
+    {
+        "id": "103",
+        "question": "Which F1 driver won the Monaco Grand Prix a record 6 times?",
+        "answer_1": "Nico Rosberg",
+        "answer_2": "Michael Schumacher",
+        "answer_3": "Lewis Hamilton",
+        "answer_4": "Ayrton Senna",
+        "correct_answer": "4"
+    },
+    {
+        "id": "104",
+        "question": "Who was Max Verstappen's teammate during his debut race at the 2015 Australian Grand Prix?",
+        "answer_1": "Carlos Sainz Jr.",
+        "answer_2": "Daniel Ricciardo",
+        "answer_3": "Daniil Kvyat",
+        "answer_4": "Jean-Éric Vergne",
+        "correct_answer": "1"
+    },
+    {
+        "id": "105",
+        "question": "Which country hosts the Marina Bay Street Circuit?",
+        "answer_1": "Malaysia",
+        "answer_2": "United Arab Emirates",
+        "answer_3": "Thailand",
+        "answer_4": "Singapore",
+        "correct_answer": "4"
+    },
+    {
+        "id": "106",
+        "question": "What team did Jenson Button win his F1 World Championship with?",
+        "answer_1": "McLaren",
+        "answer_2": "Brawn GP",
+        "answer_3": "Honda",
+        "answer_4": "Williams",
+        "correct_answer": "2"
+    },
+    {
+        "id": "107",
+        "question": "Who was Lewis Hamilton's first F1 teammate at McLaren in 2007?",
+        "answer_1": "Fernando Alonso",
+        "answer_2": "Jenson Button",
+        "answer_3": "Kimi Räikkönen",
+        "answer_4": "Heikki Kovalainen",
+        "correct_answer": "1"
+    },
+    {
+        "id": "108",
+        "question": "Which F1 driver achieved their first victory at the 2020 Italian Grand Prix?",
+        "answer_1": "Lando Norris",
+        "answer_2": "Pierre Gasly",
+        "answer_3": "Carlos Sainz Jr.",
+        "answer_4": "George Russell",
+        "correct_answer": "2"
+    },
+    {
+        "id": "109",
+        "question": "Which team was Sebastian Vettel driving for during his F1 debut in 2007?",
+        "answer_1": "Toro Rosso",
+        "answer_2": "BMW Sauber",
+        "answer_3": "Red Bull Racing",
+        "answer_4": "Ferrari",
+        "correct_answer": "2"
+    },
+    {
+        "id": "110",
+        "question": "What year did Kimi Räikkönen win his only F1 World Championship?",
+        "answer_1": "2005",
+        "answer_2": "2006",
+        "answer_3": "2007",
+        "answer_4": "2008",
         "correct_answer": "3"
     }
 ]
