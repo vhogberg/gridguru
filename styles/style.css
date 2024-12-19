@@ -21,7 +21,7 @@
 
 :root.dark-mode {
     --background-color: rgb(27, 27, 27);
-    --element-color: rgb(192, 192, 192);
+    --element-color: rgb(231, 231, 231);
     --element-background-color: rgb(59, 59, 59);
     --element-background-hover-color: rgb(48, 48, 48);
     --button-background-color: rgb(27, 27, 27);
@@ -279,5 +279,9 @@ dialog::backdrop {
         /* Allow children to grow and fill available space */
         width: calc(100% - 0.3em);
         box-sizing: border-box;
+    }
+
+    #logo-title-container {
+        margin-top: -2.4em;
     }
 }
