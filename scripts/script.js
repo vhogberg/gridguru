@@ -12,37 +12,28 @@ async function fetchQuestions() {
     const data = await response.json();
 
     // Retrieve the viewed questions from localStorage (or create an empty array if not found)
-    let viewedQuestions = JSON.parse(localStorage.getItem("viewedQuestions")) || [];
+    viewedQuestions = JSON.parse(localStorage.getItem("viewedQuestions")) || [];
 
-    // If all questions have been viewed, reset the viewedQuestions array and start over again
-    if (viewedQuestions.length === data.length) {
+    // Reset viewedQuestions if there aren't enough unviewed questions to fetch
+    if (viewedQuestions.length >= data.length - 9) {
         localStorage.removeItem("viewedQuestions");
         viewedQuestions = [];
     }
 
-    // Filter out the questions that have already been viewed
+    // Filter out already viewed questions via id
     const unviewedQuestions = data.filter(q => !viewedQuestions.includes(q.id.toString()));
 
-    // If there are no unviewed questions left, reset and try again
-    if (unviewedQuestions.length === 0) {
-        console.log("All questions have been viewed. Restarting...");
-        localStorage.removeItem("viewedQuestions");
-        viewedQuestions = [];
-    }
-
-    // Randomly select 10 questions from the unviewed ones
+    // Select 10 random questions from the unviewed set
     const selectedQuestions = getRandomQuestions(unviewedQuestions, 10);
 
+    // Add selected question ids to the viewed list
+    selectedQuestions.forEach(q => viewedQuestions.push(q.id.toString()));
+
+    // Update viewedQuestions in localStorage
     localStorage.setItem("viewedQuestions", JSON.stringify(viewedQuestions));
 
     // Store the selected questions in the global questions array
     questions = selectedQuestions;
-
-
-    // Add selected question IDs to the viewed list and store it back in localStorage
-    selectedQuestions.forEach(q => {
-        viewedQuestions.push(q.id.toString());
-    });
 
     // Reset the question index and score
     currentQuestionIndex = 0;
@@ -54,6 +45,10 @@ async function fetchQuestions() {
 
 // Function to get a random subset of questions
 function getRandomQuestions(arr, n) {
+    if (arr.length < n) {
+        console.error("Not enough questions available to select.");
+        return arr; // Return all available if fewer than requested
+    }
     const shuffled = arr.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, n);
 }

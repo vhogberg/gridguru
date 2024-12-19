@@ -280,4 +280,8 @@ dialog::backdrop {
         width: calc(100% - 0.3em);
         box-sizing: border-box;
     }
+
+    #logo-title-container {
+        margin-top: -2.4em;
+    }
 }
