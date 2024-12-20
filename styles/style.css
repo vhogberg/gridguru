@@ -330,6 +330,10 @@ dialog::backdrop {
         font-size: 12px;
     }
 
+    #score {
+        font-size: 16px;
+    }
+
     button {
         font-size: 12px;
     }
