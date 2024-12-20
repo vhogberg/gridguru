@@ -2,7 +2,7 @@
 
 Welcome to **GridGuru**, an engaging **F1 Quiz Game** with over 100 questions of varying difficulty! Test your knowledge of Formula 1 by playing in sets of 10, tracking your score after each set, and replaying to improve your results. 
 
-Enjoy hours of fun while diving into the world of Formula 1 trivia! 🏁
+Visit the site to try test your F1 knowledge here: **[www.gridguruf1quiz.vercel.app](https://gridguruf1quiz.vercel.app/)**.
 
 ## Features ✨
 
