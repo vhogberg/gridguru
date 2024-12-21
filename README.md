@@ -26,8 +26,8 @@ Optimized for various devices, ensuring a smooth experience on desktops, tablets
 
 ### PHP Backend Branch
 - A branch with a **PHP backend** stores questions in a MySQL database. 
-- This branch wasn’t used in the live version since hosting on Vercel does not support PHP. 
-- Explore it to learn how to integrate a backend into similar projects.
+- This branch wasn’t used in the live version since hosting on Vercel does not support PHP.
+- The PHP-code returns the questions in JSON format, which is why the questions are written in JSON in the main branch too.
 
 ## License
 
