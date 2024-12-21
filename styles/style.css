@@ -9,11 +9,11 @@
 }
 
 :root {
-    --background-color: rgb(255, 255, 255);
+    --background-color: rgb(250, 250, 250);
     --element-color: rgb(2, 15, 20);
-    --element-background-color: rgb(240, 240, 240);
-    --element-background-hover-color: rgb(228, 228, 228);
-    --button-background-color: rgb(218, 218, 218);
+    --element-background-color: rgb(228, 228, 228);
+    --element-background-hover-color: rgb(218, 218, 218);
+    --button-background-color: rgb(196, 196, 196);
 
     --correct-answer-color: rgba(117, 216, 126, 0.795);
     --incorrect-answer-color: rgba(236, 104, 104, 0.795);
@@ -232,13 +232,13 @@ dialog::backdrop {
 
     /* Slightly smaller logo */
     #logo {
-        max-width: 140px;
+        max-width: 130px;
         max-height: 100%;
     }
 
     /* Smaller fonts */
     h1 {
-        font-size: 45px;
+        font-size: 42px;
     }
 
     h2 {
@@ -277,11 +277,64 @@ dialog::backdrop {
     body>* {
         flex: 1;
         /* Allow children to grow and fill available space */
-        width: calc(100% - 0.3em);
+        width: 100%;
         box-sizing: border-box;
     }
 
     #logo-title-container {
         margin-top: -2.4em;
+    }
+
+    /* Align next question button to the right on mobile, since that is where your thumb naturally sits */
+    #next-question-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #current-question {
+        order: 1;
+    }
+
+    #next-question {
+        order: 2;
+    }
+}
+
+/* For phones with a small height like iPhone 8/SE */
+@media screen and (max-height: 700px) {
+
+    /* Slightly smaller logo */
+    #logo {
+        max-width: 100px;
+        max-height: 100%;
+    }
+
+    /* Smaller fonts */
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .answer p {
+        font-size: 14px;
+        margin: 0.6em 0em;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    #score {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 12px;
     }
 }

@@ -5,12 +5,12 @@ let currentQuestionIndex = 0;
 let score = 0;
 let questions = [];
 
-// Function to fetch 10 questions from the backend
+// Function to fetch 10 questions from php backend
 async function fetchQuestions() {
     // local fetch from local php file:
     const response = await fetch("./utils/fetch-question.php");
 
-    // remote fetch from server (not used because infinityfree refuses to work properly)
+    // remote fetch from server (not used because infinityfree refuses to work properly...)
     // const response = await fetch("https://viktorhogberg.infinityfreeapp.com/");
     const data = await response.json();
 
