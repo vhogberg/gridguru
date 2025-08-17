@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "question": "What is the minimum weight of a 2024 F1 car?",
+        "question": "What is the minimum weight of a 2025 F1 car?",
         "answer_1": "798 kg",
         "answer_2": "740 kg",
         "answer_3": "810 kg",
@@ -10,7 +10,7 @@
     },
     {
         "id": "2",
-        "question": "What is the maximum allowed fuel load of a 2024 F1 car during a race?",
+        "question": "What is the maximum allowed fuel load of a 2025 F1 car during a race?",
         "answer_1": "100 kg",
         "answer_2": "95 kg",
         "answer_3": "105 kg",
@@ -226,7 +226,7 @@
     },
     {
         "id": "26",
-        "question": "What is the longest circuit on the 2024 F1 calendar?",
+        "question": "What is the longest circuit on the 2025 F1 calendar?",
         "answer_1": "Suzuka",
         "answer_2": "Spa-Francorchamps",
         "answer_3": "Silverstone",
@@ -343,7 +343,7 @@
     },
     {
         "id": "39",
-        "question": "Who holds the record for the longest F1 career as of 2024?",
+        "question": "Who holds the record for the longest F1 career as of 2025?",
         "answer_1": "Fernando Alonso",
         "answer_2": "Michael Schumacher",
         "answer_3": "Kimi Räikkönen",
@@ -379,7 +379,7 @@
     },
     {
         "id": "43",
-        "question": "Which current 2024 F1 team started life as 'Jordan'?",
+        "question": "Which current F1 team started life as 'Jordan'?",
         "answer_1": "Mercedes",
         "answer_2": "Aston Martin",
         "answer_3": "Alpha Tauri",
@@ -388,7 +388,7 @@
     },
     {
         "id": "44",
-        "question": "Which F1 race holds the record for the most overtakes in a single race as of 2024?",
+        "question": "Which F1 race holds the record for the most overtakes in a single race as of 2025?",
         "answer_1": "Brazil 2012",
         "answer_2": "China 2016",
         "answer_3": "Turkey 2011",
@@ -415,7 +415,7 @@
     },
     {
         "id": "47",
-        "question": "Which driver holds the record for the most fastest laps in F1 as of 2024?",
+        "question": "Which driver holds the record for the most fastest laps in F1 as of 2025?",
         "answer_1": "Lewis Hamilton",
         "answer_2": "Sebastian Vettel",
         "answer_3": "Max Verstappen",
@@ -613,12 +613,12 @@
     },
     {
         "id": "69",
-        "question": "What is the maximum number of points a driver can earn in a single race?",
+        "question": "What is the maximum number of points a driver can earn in a single race as of 2025?",
         "answer_1": "20",
         "answer_2": "25",
         "answer_3": "26",
         "answer_4": "28",
-        "correct_answer": "3"
+        "correct_answer": "2"
     },
     {
         "id": "70",
@@ -640,7 +640,7 @@
     },
     {
         "id": "72",
-        "question": "What year did Ferrari last win a Constructors' Championship as of 2024?",
+        "question": "What year did Ferrari last win a Constructors' Championship as of 2025?",
         "answer_1": "2007",
         "answer_2": "2008",
         "answer_3": "2010",
@@ -676,7 +676,7 @@
     },
     {
         "id": "76",
-        "question": "What is the highest altitude circuit on the 2024 F1 calendar?",
+        "question": "What is the highest altitude circuit on the 2025 F1 calendar?",
         "answer_1": "Interlagos",
         "answer_2": "Monza",
         "answer_3": "Spa-Francorchamps",
@@ -685,7 +685,7 @@
     },
     {
         "id": "77",
-        "question": "Which driver holds the record for most consecutive WDC wins as of 2024?",
+        "question": "Which driver holds the record for most consecutive WDC wins as of 2025?",
         "answer_1": "Michael Schumacher",
         "answer_2": "Lewis Hamilton",
         "answer_3": "Sebastian Vettel",
